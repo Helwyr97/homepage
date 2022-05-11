@@ -4,7 +4,7 @@ const Fonts = () => {
     return (
         <Global
             styles={`
-            @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap')
             `}
         />
     )
