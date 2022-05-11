@@ -3,11 +3,29 @@ import {
     Box, 
     Heading, 
     Image,
+    Button,
     useColorModeValue
 } from "@chakra-ui/react"
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import NextLink from "next/link"
 import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { BioSection, BioYear } from "../components/bio"
+
+const bioLines = [
+    {
+        year: '1997',
+        p: 'Born in Portono, Galicia, Spain'
+    },
+    {
+        year: '2018',
+        p: 'Complete the higher level vocational training of Administration of Computer Network Systems in IES Chan do Monte'
+    },
+    {
+        year: '2022',
+        p: 'Studying the last year of Degree in Software Engineering in Universidade da Coruña'
+    }
+]
 
 const Page = () => {
     return (
@@ -58,28 +76,40 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Work
                 </Heading>
-                <Paragraph>Paragraph</Paragraph>
+                <Paragraph>
+                    I&apos;m a student of Software Engineering based in Coruña.
+                    Passionate about solving everyday problems with code and keep
+                    learning to improve my skills.
+                </Paragraph>
+                <Box align="center" my={4}>
+                    <NextLink href="/works" passHref scroll={false}>
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
+                        My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
 
             <Section delay={0.2}>
                 <Heading as="h3" variant="section-title">
                    Bio
                 </Heading>
-                <BioSection>
-                    <BioYear>1997</BioYear>
-                    Born in Portono, Galicia, Spain
-                </BioSection>
-                <BioSection>
-                    <BioYear>2018</BioYear>
-                    Complete the higher level vocational training of
-                    Administration of Computer Network Systems in
-                    IES Chan do Monte
-                </BioSection>
-                <BioSection>
-                    <BioYear>2022</BioYear>
-                    Studying the last year of Degree in Software
-                    Engineering in Universidade da Coruña
-                </BioSection>
+                {
+                    bioLines.map((l) => 
+                        <BioSection key={l.year}>
+                            <BioYear>{l.year}</BioYear>
+                            {l.p}
+                        </BioSection>
+                
+                    )
+                }
+            </Section>
+
+            <Section delay={0.3}>
+                <Heading as="h3" variant="section-title">
+                   Skills
+                </Heading>
+                
             </Section>
             
         </Container>
