@@ -22,19 +22,17 @@ const Logo = () => {
     
     return (
         <Link href="/">
-            <a>
-                <LogoBox>
-                    <Image src={logoImg} width={35} height={35} alt="logo" />
-                    <Text
-                        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                        fontFamily='Space Mono'
-                        fontWeight='bold'
-                        ml={2}
-                    >
-                        Xoel Otero
-                    </Text>
-                </LogoBox>
-            </a>
+            <LogoBox>
+                <Image src={logoImg} width={35} height={35} alt="logo" />
+                <Text
+                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                    fontFamily='Space Mono'
+                    fontWeight='bold'
+                    ml={2}
+                >
+                    Xoel Otero
+                </Text>
+            </LogoBox>
         </Link>
     )
 }
