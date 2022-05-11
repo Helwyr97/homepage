@@ -47,7 +47,8 @@ const Page = () => {
                 <Box 
                     borderRadius="lg" 
                     bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
-                    p={3} 
+                    p={3}
+                    mt={2} 
                     mb={6} 
                     align="center"
                 >
