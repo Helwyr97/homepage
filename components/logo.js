@@ -1,4 +1,3 @@
-import Lin from "next/link"
 import Image from "next/image"
 import { Link, Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
