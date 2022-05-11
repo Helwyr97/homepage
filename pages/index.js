@@ -5,7 +5,11 @@ import {
     Image,
     Button,
     useColorModeValue,
-    Wrap
+    Wrap,
+    List,
+    ListItem,
+    Link,
+    Icon
 } from "@chakra-ui/react"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from "next/link"
@@ -14,6 +18,12 @@ import Paragraph from "../components/paragraph"
 import { BioSection, BioYear } from "../components/bio"
 import SkillBox from "../components/skill"
 import Layout from "../components/layouts/article"
+import {
+    IoLogoTwitter,
+    IoLogoInstagram,
+    IoLogoGithub,
+    IoLogoDiscord
+} from 'react-icons/io5'
 
 const bioLines = [
     {
@@ -175,7 +185,58 @@ const Page = () => {
                                 <p>Kotlin</p>
                             </SkillBox>
                     </Wrap>
-                    
+                </Section>
+
+                <Section delay={0.4}>
+                    <Heading as="h3" variant="section-title">
+                    On the net
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href="https://github.com/Helwyr97" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="blue"
+                                    leftIcon={<Icon as={IoLogoGithub} />}
+                                >
+                                    @Helwyr97
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://twitter.com/XoelOtero" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="blue"
+                                    leftIcon={<Icon as={IoLogoTwitter} />}
+                                >
+                                    @XoelOtero
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://www.instagram.com/xoel_otero" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="blue"
+                                    leftIcon={<Icon as={IoLogoInstagram} />}
+                                >
+                                    @xoel_otero
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://discord.com/users/Helwyr#6097" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="blue"
+                                    leftIcon={<Icon as={IoLogoDiscord} />}
+                                >
+                                    @Helwyr#6097
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
                 
             </Container>
