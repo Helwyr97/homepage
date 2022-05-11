@@ -7,7 +7,7 @@ const LogoBox = styled.span`
     font-size: 18px;
     display: inline-flex;
     align-items: center;
-    height: 30px;
+    height: 35px;
     line-height: 20px;
     padding: 10px;
     img {
@@ -24,12 +24,12 @@ const Logo = () => {
         <Link href="/">
             <a>
                 <LogoBox>
-                    <Image src={logoImg} width={30} height={30} alt="logo" />
+                    <Image src={logoImg} width={35} height={35} alt="logo" />
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='Space Mono'
                         fontWeight='bold'
-                        ml={3}
+                        ml={2}
                     >
                         Xoel Otero
                     </Text>
