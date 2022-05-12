@@ -8,6 +8,7 @@ const Main = ({children, router}) => {
         <Box as="main" pb="8">
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" type="image/png"href="/images/logo-dark.png" />
                 <title>Xoel Otero - HomePage</title>
             </Head>
 
