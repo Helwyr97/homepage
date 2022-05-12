@@ -125,66 +125,12 @@ const Page = () => {
                     Skills
                     </Heading>
                     <Wrap align="center" spacing={4} justify="center">
-                            <SkillBox>
-                                <Image
-                                    src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                                    h={10} 
-                                    w={10} 
-                                    alt="Javascript"
-                                    display="inline"    
-                                />
-                                <p>Javascript</p>
-                            </SkillBox>
-                            <SkillBox>
-                                <Image
-                                    src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"
-                                    h={10} 
-                                    w={10} 
-                                    alt="Java"
-                                    display="inline"    
-                                />
-                                <p>Java</p>
-                            </SkillBox>
-                            <SkillBox>
-                                <Image
-                                    src="https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg"
-                                    h={10} 
-                                    w={10} 
-                                    alt="Spring"
-                                    display="inline"    
-                                />
-                                <p>Spring</p>
-                            </SkillBox>
-                            <SkillBox>
-                                <Image
-                                    src="https://nodejs.org//static/images/logo.svg"
-                                    h={10} 
-                                    w={10} 
-                                    alt="Node.js"
-                                    display="inline"    
-                                />
-                                <p>Node.js</p>
-                            </SkillBox>
-                            <SkillBox>
-                                <Image
-                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
-                                    h={10} 
-                                    w={10} 
-                                    alt="React.js"
-                                    display="inline"    
-                                />
-                                <p>React.js</p>
-                            </SkillBox>
-                            <SkillBox>
-                                <Image
-                                    src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png"
-                                    h={10} 
-                                    w={10} 
-                                    alt="Kotlin"
-                                    display="inline"    
-                                />
-                                <p>Kotlin</p>
-                            </SkillBox>
+                        <SkillBox title="JavaScript" src="/images/skills/javascript.png" />
+                        <SkillBox title="Java" src="/images/skills/java.png" />
+                        <SkillBox title="Spring" src="/images/skills/spring.svg" />
+                        <SkillBox title="Node.js" src="/images/skills/node.svg" />
+                        <SkillBox title="React.js" src="/images/skills/react.svg" />
+                        <SkillBox title="Kotlin" src="/images/skills/kotlin.svg" />
                     </Wrap>
                 </Section>
 

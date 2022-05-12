@@ -1,6 +1,6 @@
-import { Box, useColorModeValue } from '@chakra-ui/react'
+import { Box, useColorModeValue, Image } from '@chakra-ui/react'
 
-const SkillBox = ({children}) => {
+const SkillBox = ({title, src}) => {
     return (
         <Box
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -12,7 +12,15 @@ const SkillBox = ({children}) => {
             borderWidth={2}
             borderStyle="solid"
         >
-            {children}
+            <Image
+                src={src}
+                h={10} 
+                w={10} 
+                alt={title}
+                display="inline"  
+                placeholder="blur"  
+            />
+            <p>{title}</p>
         </Box>
     )
 }
