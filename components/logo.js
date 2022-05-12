@@ -1,6 +1,7 @@
 import Image from "next/image"
-import { Link, Text, useColorModeValue } from '@chakra-ui/react'
+import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 
 const LogoBox = styled.span`
     font-weight: bold;
@@ -21,7 +22,8 @@ const Logo = () => {
     const logoImg = `/images/logo${useColorModeValue('','-dark')}.png`
     
     return (
-        <Link href="/">
+        <Link href="/" scroll={false}>
+            <a>
             <LogoBox>
                 <Image src={logoImg} width={35} height={35} alt="logo" />
                 <Text
@@ -33,6 +35,7 @@ const Logo = () => {
                     Xoel Otero
                 </Text>
             </LogoBox>
+            </a>
         </Link>
     )
 }
