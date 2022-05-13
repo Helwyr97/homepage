@@ -25,7 +25,6 @@ import {
     IoLogoDiscord
 } from 'react-icons/io5'
 import { FormattedMessage } from "react-intl"
-import messages from "../lib/messages"
 
 const bioLines = [
     {

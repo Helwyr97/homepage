@@ -10,9 +10,9 @@ const Main = ({children, router}) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" type="image/png"href="/images/logo-dark.png" />
                 <title>Xoel Otero - HomePage</title>
-                <link rel="alternate" hreflang="es"
+                <link rel="alternate" hrefLang="es"
                     href="https://xoelotero.dev/es" />
-                <link rel="alternate" hreflang="gl"
+                <link rel="alternate" hrefLang="gl"
                     href="https://xoelotero.dev/gl" />
 
             </Head>
