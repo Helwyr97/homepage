@@ -10,6 +10,11 @@ const Main = ({children, router}) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" type="image/png"href="/images/logo-dark.png" />
                 <title>Xoel Otero - HomePage</title>
+                <link rel="alternate" hreflang="es"
+                    href="https://xoelotero.dev/es" />
+                <link rel="alternate" hreflang="gl"
+                    href="https://xoelotero.dev/gl" />
+
             </Head>
 
             <Navbar path={router.asPath} />

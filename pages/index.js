@@ -24,6 +24,8 @@ import {
     IoLogoGithub,
     IoLogoDiscord
 } from 'react-icons/io5'
+import { FormattedMessage } from "react-intl"
+import messages from "../lib/messages"
 
 const bioLines = [
     {
@@ -52,7 +54,7 @@ const Page = () => {
                     mb={6} 
                     align="center"
                 >
-                    Hello, I&apos;m a full-stack developer based in Coruña!
+                    <FormattedMessage id="home.welcome" />
                 </Box>
 
                 <Box display={{md:'flex'}}>
@@ -89,17 +91,15 @@ const Page = () => {
 
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title">
-                        Work
+                        <FormattedMessage id="home.section.work.title" />
                     </Heading>
                     <Paragraph>
-                        I&apos;m a student of Software Engineering based in Coruña.
-                        Passionate about solving everyday problems with code and keep
-                        learning to improve my skills.
+                        <FormattedMessage id="home.section.work.text" />
                     </Paragraph>
                     <Box align="center" my={4}>
                         <NextLink href="/works" passHref scroll={false}>
                             <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
-                            My portfolio
+                                <FormattedMessage id="home.section.work.buttonlink" />
                             </Button>
                         </NextLink>
                     </Box>
@@ -107,13 +107,13 @@ const Page = () => {
 
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">
-                    Bio
+                        <FormattedMessage id="home.section.bio.title" />
                     </Heading>
                     {
                         bioLines.map((l) => 
                             <BioSection key={l.year}>
                                 <BioYear>{l.year}</BioYear>
-                                {l.p}
+                                <FormattedMessage id={`home.section.bio.${l.year}`} />
                             </BioSection>
                     
                         )
@@ -122,7 +122,7 @@ const Page = () => {
 
                 <Section delay={0.3}>
                     <Heading as="h3" variant="section-title">
-                    Skills
+                        <FormattedMessage id="home.section.skills.title" />
                     </Heading>
                     <Wrap align="center" spacing={4} justify="center">
                         <SkillBox title="JavaScript" src="/images/skills/javascript.png" />
@@ -136,7 +136,7 @@ const Page = () => {
 
                 <Section delay={0.4}>
                     <Heading as="h3" variant="section-title">
-                    On the net
+                        <FormattedMessage id="home.section.social.title" />
                     </Heading>
                     <List>
                         <ListItem>
