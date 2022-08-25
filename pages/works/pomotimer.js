@@ -7,27 +7,28 @@ import { FormattedMessage } from 'react-intl'
 
 const Work = () => {
     return (
-        <Layout title="Music Discoverer (web)">
+        <Layout title="Pomotimer">
             <Container>
                 <Title>
-                Music Discoverer (web) <Badge>2021</Badge>
+                Pomotimer <Badge>2022</Badge>
                 </Title>
                 <P>
-                    <FormattedMessage id="works.work.musicdiscovererweb.description" />
+                    <FormattedMessage id="works.work.pomotimer.description2" />
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
                         <Meta>Web</Meta>
-                        <Link href="https://musicdiscoverer.xoelotero.dev">
-                            musicdiscoverer.xoelotero.dev <ExternalLinkIcon mx="2px" />
+                        <Link href="https://pomotimer.xoelotero.dev">
+                            pomotimer.xoelotero.dev <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>
-                        <span>Next.js</span>
+                        <span>React</span>
                     </ListItem>
                 </List>
-                <WorkImage src="/images/works/musicdiscovererweb.png" alt="Music Discoverer" />
+                <WorkImage src="/images/works/pomotimer.png" alt="Pomotimer" />
+                <WorkImage src="/images/works/pomotimer2.png" alt="Pomotimer" />
             </Container>
         </Layout>
     )
