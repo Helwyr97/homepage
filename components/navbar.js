@@ -22,15 +22,12 @@ import LanguageSelectorButton from './language-selector-button'
 const LinkItem = ({href, path, children}) => {
     const active = path === href
 
-    const inactiveColor = useColorModeValue('gray200','white')
-
     return (
         <NextLink href={href}>
             <Link
                 p={2}
-                bg={active ? 'blue.200' : undefined}
-                color={active ? '#202023' : inactiveColor}
                 borderRadius="xl"
+                textDecoration={active ? "underline" : "none"}
             >
                 {children}
             </Link>
