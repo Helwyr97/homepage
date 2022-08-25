@@ -3,6 +3,7 @@ import Section from '../components/section'
 import { WorkGridItem } from "../components/grid-item"
 import Layout from "../components/layouts/article"
 import thumbmusicdiscovererWeb from '../public/images/works/musicdiscovererweb.png'
+import thumnailPomotimer from '../public/images/works/pomotimer.png'
 import { FormattedMessage } from "react-intl"
 
 const Works = () => {
@@ -16,14 +17,14 @@ const Works = () => {
                 <SimpleGrid columns={[1,1,2]} gap={6}>
                     <Section>
                         <WorkGridItem id="musicdiscovererweb" title="Music Discoverer Web" thumbnail={thumbmusicdiscovererWeb}>
-                            <FormattedMessage id="works.work.1.description" />
+                            <FormattedMessage id="works.work.musicdiscovererweb.description" />
                         </WorkGridItem>
                     </Section>
-                    {/* <Section>
-                        <WorkGridItem id="musicdiscovererMobile" title="Music Discoverer Android" thumbnail={thumbmusicdiscovererAndroid}>
-                            App to discover music of all genres randomly, using the spotify api
+                    <Section>
+                        <WorkGridItem id="pomotimer" title="Pomotimer" thumbnail={thumnailPomotimer}>
+                            <FormattedMessage id="works.work.pomotimer.description" />
                         </WorkGridItem>
-                    </Section> */}
+                    </Section>
                 </SimpleGrid>
             </Container>
         </Layout>
