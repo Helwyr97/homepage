@@ -11,6 +11,7 @@ import Link from 'next/link'
 
 const LanguageSelectorButton = () => {
   const { locale, locales, pathname } = useRouter()
+  const activeColor = useColorModeValue('gray.300', 'gray.500')
 
   return (
     <Menu>
@@ -26,11 +27,7 @@ const LanguageSelectorButton = () => {
       <MenuList>
         {locales.map(l => (
           <Link key={l} href={pathname} locale={l}>
-            <MenuItem
-              backgroundColor={
-                l === locale ? useColorModeValue('gray.300', 'gray.500') : null
-              }
-            >
+            <MenuItem backgroundColor={l === locale ? activeColor : null}>
               {l}
             </MenuItem>
           </Link>
