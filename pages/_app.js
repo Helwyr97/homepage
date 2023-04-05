@@ -7,22 +7,21 @@ import { IntlProvider } from 'react-intl'
 import { useRouter } from 'next/router'
 import messages from '../lib/messages'
 
-const Website = ({Component, pageProps, router}) => {
-    
-    const { locale } = useRouter()
+const Website = ({ Component, pageProps, router }) => {
+  const { locale } = useRouter()
 
-    return (
-        <ChakraProvider theme={theme}>
-            <IntlProvider locale={locale} messages={messages[locale]}>
-                <Fonts />
-                <Layout router={router}>
-                    <AnimatePresence exitBeforeEnter initial={true}>
-                        <Component {...pageProps} key={router.route} />
-                    </AnimatePresence> 
-                </Layout>
-            </IntlProvider>
-        </ChakraProvider>
-    )
+  return (
+    <ChakraProvider theme={theme}>
+      <IntlProvider locale={locale} messages={messages[locale]}>
+        <Fonts />
+        <Layout router={router}>
+          <AnimatePresence mode={'wait'} initial={true}>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Layout>
+      </IntlProvider>
+    </ChakraProvider>
+  )
 }
 
 export default Website
