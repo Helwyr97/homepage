@@ -5,6 +5,8 @@ import Layout from '../components/layouts/article'
 import thumbmusicdiscovererWeb from '../public/images/works/musicdiscovererweb.png'
 import thumnailPomotimer from '../public/images/works/pomotimer.png'
 import thumnailGeometricArtGenerator from '../public/images/works/geometricartgenerator.png'
+import thumnailNotes from '../public/images/works/notes1.png'
+import thumnailStreaming from '../public/images/works/galiflix1.png'
 import { FormattedMessage } from 'react-intl'
 
 const Works = () => {
@@ -16,6 +18,24 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="galiflix"
+              title="Galiflix Streaming App"
+              thumbnail={thumnailStreaming}
+            >
+              <FormattedMessage id="works.work.galiflix.description" />
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="notes"
+              title="Notes App"
+              thumbnail={thumnailNotes}
+            >
+              <FormattedMessage id="works.work.notes.description" />
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
               id="musicdiscovererweb"
