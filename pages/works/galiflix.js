@@ -10,7 +10,7 @@ const Work = () => {
     <Layout title="Galiflix">
       <Container>
         <Title>
-          Galiflix <Badge>2022</Badge>
+          Galiseries <Badge>2023</Badge>
         </Title>
         <P>
           <FormattedMessage id="works.work.galiflix.description2" />
@@ -18,13 +18,13 @@ const Work = () => {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Web</Meta>
-            <Link href="https://galiflix.xoelotero.dev">
-              galiflix.xoelotero.dev <ExternalLinkIcon mx="2px" />
+            <Link href="https://galiseries.xoelotero.dev">
+              galiseries.xoelotero.dev <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>React, Supabase</span>
+            <span>Next.js, Supabase</span>
           </ListItem>
         </List>
         <WorkImage src="/images/works/galiflix1.png" alt="Galiflix App 1" />

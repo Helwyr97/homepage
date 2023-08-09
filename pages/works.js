@@ -21,7 +21,7 @@ const Works = () => {
           <Section>
             <WorkGridItem
               id="galiflix"
-              title="Galiflix Streaming App"
+              title="Galiseries Streaming App"
               thumbnail={thumnailStreaming}
             >
               <FormattedMessage id="works.work.galiflix.description" />
